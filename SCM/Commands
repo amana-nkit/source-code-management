@@ -75,3 +75,42 @@ remote: Total 20 (delta 3), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (20/20), 4.11 KiB | 1.37 MiB/s, done.
 root@AZ-VM001:~/amanproject# ls
 Source-code-management  app.js  app.py  result.java  welcome.html
+
+Branching and Merging:-
+*********************
+
+git branch (check all branch)
+git branch july (create july branch)
+git checkout july (switch to july branch)
+git merge july (merge july branch to main branch)
+
+root@AZ-VM001:~/amanproject/Source-code-management/test# git branch
+* main
+root@AZ-VM001:~/amanproject/Source-code-management/test# git branch july
+root@AZ-VM001:~/amanproject/Source-code-management/test# git branch
+  july
+* main
+root@AZ-VM001:~/amanproject/Source-code-management/test# git checkout july
+Switched to branch 'july'
+root@AZ-VM001:~/amanproject/Source-code-management/test# git branch
+* july
+  main
+root@AZ-VM001:~/amanproject/Source-code-management/test# touch julydata
+root@AZ-VM001:~/amanproject/Source-code-management/test# git add julydata
+root@AZ-VM001:~/amanproject/Source-code-management/test# git commit -m "This is july branch data "
+[july 4357e87] This is july branch data
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test/julydata
+ root@AZ-VM001:~/amanproject/Source-code-management/test# git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+root@AZ-VM001:~/amanproject/Source-code-management/test# git branch
+  july
+* main
+root@AZ-VM001:~/amanproject/Source-code-management/test# git merge july
+Updating 9e06add..4357e87
+Fast-forward
+ test/julydata | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test/julydata
+
