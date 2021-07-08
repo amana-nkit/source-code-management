@@ -1,2 +1,45 @@
 Source Code Management :-
 **********************
+
+Version = 2.32.11.222
+
+222 - Hotfix
+11 - Minor Release
+32 - Major Release (New Feature) 
+2 - Facelift Application (Upgrade and Migration)
+
+git --version (Checks version of git)
+apt-get install git (Installs git)
+git init (Initialize git)
+ls -la (shows hidden folder to check git)
+
+Test:-
+****
+
+Make Change -> Add Change -> Commit the change
+
+root@AZ-VM001:~# mkdir amanproject
+root@AZ-VM001:~# cd amanproject
+root@AZ-VM001:~/amanproject# git init
+Initialized empty Git repository in /root/amanproject/.git/
+root@AZ-VM001:~/amanproject# touch welcome.html
+root@AZ-VM001:~/amanproject# git status
+root@AZ-VM001:~/amanproject# git add welcome.html
+root@AZ-VM001:~/amanproject# git status
+root@AZ-VM001:~/amanproject# git commit -m "first commit "
+root@AZ-VM001:~/amanproject# git log
+commit ce3d4a844fac82a3f179041433b157bb57493031 (HEAD -> master)
+Author: root <root@AZ-VM001.52nry22fsdredfyahyashiwbfh.bx.internal.cloudapp.net>
+Date:   Thu Jul 8 04:08:23 2021 +0000
+
+    first commit
+
+Configure Git Repositries :-
+*************************
+
+root@AZ-VM001:~/amanproject# git config --global user.name amana-ankit
+root@AZ-VM001:~/amanproject# git config --global user.email amanankit2021@outlook.com
+
+
+
+ 
