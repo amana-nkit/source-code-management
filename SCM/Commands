@@ -49,4 +49,10 @@ root@AZ-VM001:~/amanproject# git config --global core.editor "vim"
 
 git rm --cached welcome.html (Doesn't track the html file)
 git ignore welcome1.html (Ignore new contents in git)
- 
+git tag -a v1.16 -m "this is july release" (tag the commit)
+git show (Shows all details of commit)
+git tag -a v1.17 -m "this is july release" ce3d4a844fac82a3f179041433b157bb57493031 (Tag to assign commit ID's)
+git diff (To see difference between two commits)
+git reset (Reset the changes)
+git revert (Revert the changes keeping old commit)
+git stash (Temproarily moving changes)
