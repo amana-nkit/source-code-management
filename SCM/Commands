@@ -62,3 +62,15 @@ git diff (To see difference between two commits)
 git reset (Reset the changes)
 git revert (Revert the changes keeping old commit)
 git stash (Temproarily moving changes)
+
+Clone github:-
+************
+root@AZ-VM001:~/amanproject# git clone https://github.com/amana-nkit/Source-code-management
+Cloning into 'Source-code-management'...
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 20 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (20/20), 4.11 KiB | 1.37 MiB/s, done.
+root@AZ-VM001:~/amanproject# ls
+Source-code-management  app.js  app.py  result.java  welcome.html
