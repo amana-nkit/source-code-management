@@ -40,6 +40,12 @@ Configure Git Repositories :-
 root@AZ-VM001:~/amanproject# git config --global user.name amana-ankit
 root@AZ-VM001:~/amanproject# git config --global user.email amanankit2021@outlook.com
 
+push an existing repository from the command line:-
+
+git remote add origin https://github.com/amana-nkit/Source-code-management.git
+git branch -M main
+git push -u origin main
+
 git reset --hard ce3d4a844fac82a3f179041433b157bb57493031 (To go back to previous code base)
 
 Configure autocorrect in git:-
